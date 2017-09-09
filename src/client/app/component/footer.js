@@ -1,3 +1,5 @@
+import FontAwesome from 'react-fontawesome';
+
 import React, {Component} from 'react';
 
 class Footer extends Component {
@@ -13,10 +15,10 @@ class Footer extends Component {
 									<a href="/">Home</a>
 								</li>
 								<li>
-									<a href="/">Explore Jobs</a>
+									<a href="/jobs">Explore Jobs</a>
 								</li>
 								<li>
-									<a href="/">Join Now</a>
+									<a href="/signup">Join Now</a>
 								</li>
 							</ul>
 						</div>
@@ -24,13 +26,13 @@ class Footer extends Component {
 							<strong>For Business</strong>
 							<ul>
 								<li>
-									<a href="/">What We offer</a>
+									<a href="/employer">What We offer</a>
 								</li>
 								<li>
-									<a href="/">Pricing</a>
+									<a href="/employer/pricing">Pricing</a>
 								</li>
 								<li>
-									<a href="/">Customers</a>
+									<a href="/employer/demo">Customers</a>
 								</li>
 							</ul>
 						</div>
@@ -38,16 +40,16 @@ class Footer extends Component {
 							<strong>JobsOnTheGo</strong>
 							<ul>
 								<li>
-									<a href="/">Our Story & People</a>
+									<a href="/about">Our Story & People</a>
 								</li>
 								<li>
-									<a href="/">Support</a>
+									<a href="/support">Support</a>
 								</li>
 								<li>
-									<a href="/">Blog</a>
+									<a href="https://medium.com/chingu">Blog</a>
 								</li>
 								<li>
-									<a href="/">Join the team</a>
+									<a href="https://tropicalchancer.github.io/projectus/">Join the team</a>
 								</li>
 							</ul>
 						</div>
@@ -55,34 +57,62 @@ class Footer extends Component {
 							<strong>Follow Us</strong>
 							<ul>
 								<li>
-									<a>Facebook</a>
+									<a href="https://www.facebook.com/">Facebook</a>
 									<span className="socialIcon">
-										<img src="./images/facebook.png"/>
+										<img src=""/>
+										<FontAwesome
+									        className='social'
+									        name='facebook-official'
+									        size='2x'
+									        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+									    />
 									</span>
 								</li>
 								<li>
-									<a>Twitter</a>
+									<a href="https://twitter.com">Twitter</a>
 									<span className="socialIcon">
-										<img src="./images/twitter.png"/>
+										<img src=""/>
+										<FontAwesome
+									        className='social'
+									        name='twitter-square'
+									        size='2x'
+									        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+									    />
 									</span>
 								</li>
 								<li>
-									<a>Google Plus</a>
+									<a href="https://plus.google.com/">Google Plus</a>
 									<span className="socialIcon">
-										<img src="./images/google-plus.png"/>
+										<img src=""/>
+										<FontAwesome
+									        className='social'
+									        name='google-plus-official'
+									        size='2x'
+									        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+									    />
 									</span>
 								</li>
 								<li>
-									<a>Instagram</a>
+									<a href="https://www.instagram.com/">Instagram</a>
 									<span className="socialIcon">
-										<img src="./images/instagram.png"/>
-									</span>
+										<img src=""/>
+										<FontAwesome
+									        className='social'
+									        name='instagram'
+									        size='2x'
+									        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+									    />									</span>
 								</li>
 								<li>
-									<a href="/">LinkedIn</a>
+									<a href="https://www.linkedin.com/">LinkedIn</a>
 									<span className="socialIcon">
-										<img src="./images/linkedin.png"/>
-									</span>
+										<img src=""/>
+										<FontAwesome
+									        className='social'
+									        name='linkedin-square'
+									        size='2x'
+									        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+									    />									</span>
 								</li>
 							</ul>
 						</div>
@@ -90,7 +120,7 @@ class Footer extends Component {
 				</div>
 				<div className="company-info">
 					<div className="container">
-						<p className="text-center">&copy; JobsOnTheGo 2017 Lorem Ipsum Dolor Se</p>
+						<p className="text-center">&copy; JobsOnTheGo 2017 Chingu B2L Project</p>
 					</div>
 				</div>
 			</footer>

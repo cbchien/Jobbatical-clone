@@ -28,11 +28,14 @@ var UserSchema = new mongoose.Schema({
 			//maybe a way to hash before storing into db
 			type: String
 		},
-		applied: [{
-	      job: {
-	        type: mongoose.Schema.Types.ObjectId
-	      }
-	    }]
+		applied: [],
+    saved: {
+      type: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Job',
+      }],
+      default: () => [],
+    },
 	}
 
 });

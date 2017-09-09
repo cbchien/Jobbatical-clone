@@ -16,7 +16,6 @@ section {
 	clear: both;
 }
 
-
 h3.header,
 h2.header {
 	text-align: center;
@@ -25,8 +24,9 @@ h2.header {
 /******Header Styles******/
 
 .header-styles {
+    background: #fff;
 	position: absolute;
-    background-color: #F7FFF7;
+    	background-color: #fff;
 	width: 100%;
 	left: 0;
 	top: 0;
@@ -45,9 +45,19 @@ h2.header {
     font-weight: bolder;
 }
 
-.header-styles .logo a {
+.header-styles .logo a,
+.navbar-header .navbar-brand{
     color: #88498F;
     font-size: 24px;
+}
+
+.header-styles .navbar-header {
+    padding:20px;
+}
+
+.header-styles .navbar-header .navbar-right a {
+    color: #88498F;
+    font-weight: lighter;
 }
 
 .navbar-right {
@@ -120,6 +130,7 @@ h2.header {
 	background-position: center;
 	background-repeat: no-repeat;
 	padding-top: 450px;
+    margin-bottom: 30px;
 }
 
 .landing-numbers {
@@ -133,6 +144,79 @@ h2.header {
     max-width: 580px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*****Featured Jobs Section*****/
+
+.featured-jobs {
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.featured-jobs h3 {
+    margin-bottom: 50px;
+}
+
+.jobCard {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    color: #666;
+    cursor: pointer;
+    min-height: 400px;
+    max-height: 400px;
+    overflow:hidden;
+}
+
+.jobCard .job-picture {
+    margin-bottom: 10px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.job-picture .job-image {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.jobCard .job-desc {
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.jobCard .job-desc h4 {
+    font-weight: 700;
+}
+
+.jobCard .companyLoc {
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.jobCard .company {
+    font-weight: bolder;
+}
+
+.jobCard .jobCard-footer {
+    padding: 20px;
+    margin-top: -10px;
+}
+
+.jobCard .save-btn {
+    float: right;
+}
+
+.jobCard .save-btn .btn {
+    background: #88498F;
+    color: #fff;
+    margin-top: -10px;
 }
 
 /*****Press Section Styles*****/
@@ -296,96 +380,44 @@ h3.header {
 
 /*****Media Queries*****/
 
-/*****Jobs Page*****/
-   /** inputbox **/
-.inputbox-section {
-    position: block;
-    padding-top: 10%;
-    background-color: #F4F4F6;
-    width: 100%;
-    height: 50%;
-    text-align: center;
-    z-index: 99;
+@media(max-width: 768px) {
+
+    /*****landing styles*****/
+    .landing {
+        height: 1200px;
+    }
+
+    .landing-numbers {
+        font-size: 30px;
+    }
 }
 
-.inputbox-section .autocomplete {
-    text-align: left;
-    padding-left: 5px;
+@media(max-width: 540px) {
+
+     /*****landing styles*****/
+
+     .landing {
+        height: 1320px;
+     }
+
+    .landing-numbers {
+        font-size: 24px;
+    }
+
+    /*****Mission Styles*****/
+
+    .mission .container {
+        background-position: bottom;
+    }
+    .mission p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    /*****Featured Job Styles*****/
+    .jobCard .job-desc h4 {
+        font-size: 15px;
+    }
 
 }
 
-.inputbox-section .serach-title{
-    font-size: 4em;
-    font-weight: bold;
-}
-
-    /** inputbox **/
-.job-listing-section {
-    display: block;
-    background-color: #F4F4F6;
-    margin: auto;
-    text-align: center;
-}
-
-.search-status {
-    margin-bottom: 20px;
-}
-
-.search-status .search-input {
-    font-size: 14px;
-    padding: 7px 10px;
-    margin: 20px 2px;
-    width: 380px;
-}
-
-.search-status .search-button{
-    background-color: #9F84BD;
-    color: #F7FFF7;
-    border-radius: 3px;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    font-size: 14px;
-    line-height: 10px;
-    text-align: center;
-    padding: 14px 31px;
-    margin: 20px 2px;
-    border: 0;
-    width: 140px;
-}
-
-.job-details {
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    width: 290px;
-    height: 220px;
-    overflow: hidden;
-    border: 1px solid rgba(155,80,148,0.1);
-    border-radius:4px;
-    background-color: #F7FFF7;
-    margin: 5px;
-    padding: 9px;
-}
-
-.job-details>a{
-    text-decoration:none;
-}
-
-.job-details:hover .job-picture {
-    margin: -85px -5px 5px -15px;
-    padding: 0px;
-    transition-duration: 1.5s
-}
-
-.job-details:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.job-picture {
-    margin: -9px 0px 5px -15px;
-    padding: 0px;
-}
-
-.job-emptype {
-    color: #908593;
-}

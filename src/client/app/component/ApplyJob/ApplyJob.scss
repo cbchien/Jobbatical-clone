@@ -1,0 +1,39 @@
+.job-application{
+  position: absoulte;
+}
+.job-card {
+  margin: 15vw 18vw 20px 18vw;
+  width: 64vw;
+  border: 1px solid rgba(155,80,148,0.5);
+  background-color: #F4F4F6;
+  border-radius: 10px;
+  padding: 5px 5px 5px 10px;
+}
+
+.detail {
+  padding-top: 100px;
+  font: 400 16px/1.5 "Roboto", sans-serif;
+  color: rgba(0, 0, 0, .87);
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  padding: 5px 5px 0px 3px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+  .job-card {
+      margin: 20vh 9vw 10px 9vw;
+      width: 80vw;
+  }
+
+  .job-card h4 {
+      font-size: 16px;
+      padding-bottom: 10px;
+  }
+
+}
